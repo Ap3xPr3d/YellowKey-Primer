@@ -8,9 +8,9 @@ This is a fork of [Nightmare-Eclipse/YellowKey](https://github.com/Nightmare-Ecl
 
 ## Table of Contents
 1. [Prerequisites](#prerequisites)
-2. [Step 1 – Prime the USB (once per engagement)](#step-1‑prime-the-usb)
-3. [Step 2 – Deploy the payload on the target](#step-2‑deploy-the-payload)
-4. [Step 3 – Boot the target into WinRE and trigger the exploit](#step-3‑boot-the-target-into-winre)
+2. [Step 1 – Prime the USB (once per engagement)](#step-one)
+3. [Step 2 – Deploy the payload on the target](#step-two)
+4. [Step 3 – Boot the target into WinRE and trigger the exploit](#step-three)
 
 ---
 
@@ -40,6 +40,7 @@ All the files under `YK\FsTx\95F62703B343F111A92A005056975458` are required exac
 
 ---
 
+<a name="step-one"></a>
 ## Step 1 – Prime the USB (run **once** before the engagement)
 1. Insert the USB into your Windows workstation.
 2. Open **PowerShell** **as Administrator**.
@@ -64,12 +65,14 @@ All the files under `YK\FsTx\95F62703B343F111A92A005056975458` are required exac
 
 ---
 
+<a name="step-two"></a>
 ## Step 2 – Deploy the payload on the target
 1. Insert the **primed** USB into the **target** machine (the one you will test against).
 2. The USB will automatically appear as a removable drive (e.g., `E:`). No manual copy is required – the YellowKey payload is already inside `System Volume Information\FsTx` thanks to the priming script.
 
 ---
 
+<a name="step-three"></a>
 ## Step 3 – Boot the target into WinRE and trigger the exploit
 1. **Shift + Restart**
    * Click **Start → Power → Restart** **while holding the Shift key**. 
